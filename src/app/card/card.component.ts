@@ -32,7 +32,7 @@ export class CardComponent implements OnInit {
   }
 
   public addNew() {
-    this.ModalTitle = 'Add new Patient';
+    this.ModalTitle = 'Add New Patient';
     this.newPatient = true;
     this.tempPatient = {} as ContactCard;
   }

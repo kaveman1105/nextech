@@ -12,6 +12,8 @@ export class CardComponent implements OnInit {
   tempPatient: ContactCard;
   private index: number;
   private Patients: ContactCard[];
+  private ModalTitle: string;
+  private newPatient: boolean = false;
 
   constructor(
     private cardService: CardsService
@@ -22,20 +24,38 @@ export class CardComponent implements OnInit {
   }
 
   public edit(index: number) {
+    this.ModalTitle = 'Edit Patient';
     this.index = index;
     this.tempPatient = JSON.parse(JSON.stringify(this.Patients[this.index]));
     console.log(this.tempPatient);
 
   }
 
+  public addNew() {
+    this.ModalTitle = 'Add new Patient';
+    this.newPatient = true;
+    this.tempPatient = {} as ContactCard;
+    console.log(this.tempPatient);
+  }
+
   public cancel() {
     this.tempPatient = null;
+    this.newPatient = false;
+  }
+  public delete(){
+    this.Patients.splice(this.index, 1);
   }
 
   public save() {
+    if (this.newPatient) {
+      this.Patients.push(this.tempPatient);
 
+    } else {
     this.copy(this.Patients[this.index], this.tempPatient);
+    }
+
     this.tempPatient = null;
+    this.newPatient = false;
   }
 
   private copy(target: any, source: any) {
@@ -51,6 +71,7 @@ export class CardComponent implements OnInit {
     target.City = source.City;
     target.State = source.State;
     target.Zip = source.Zip;
+    target.Occupation = source.Occupation;
   }
 
 }

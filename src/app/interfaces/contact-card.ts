@@ -1,4 +1,4 @@
-export class ContactCard {
+export interface ContactCard {
     FirstName: string;
     City:string;
     LastName: string;

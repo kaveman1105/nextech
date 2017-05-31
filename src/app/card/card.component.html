@@ -1,4 +1,9 @@
 <div class="row">
+  <div class="col-xs-12">
+    <button class="btn btn-primary addPatientBtn" (click)="addNew()" data-toggle="modal" data-target="#myModal">Add New Patient</button>
+  </div>
+</div>
+<div class="row">
   <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3" *ngFor="let patient of Patients; let i = index">
     <div class="container">
       <div class="card card-outline-primaryw-100">
@@ -58,7 +63,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" (click)="cancel()" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Edit Patient</h4>
+        <h4 class="modal-title" id="myModalLabel">{{ModalTitle}}</h4>
       </div>
       <div class="modal-body" *ngIf="tempPatient">
         <div class="container">
@@ -125,6 +130,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal" (click)="cancel()">Close</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal" (click)="delete()">Delete</button>
         <button type="button" class="btn btn-primary" data-dismiss="modal" (click)="save()">Save changes</button>
       </div>
     </div>

@@ -61,7 +61,22 @@ export const list = `
             "Gender":"Female"
         },
         {
-            "FirstName": "kevin3",
+            "FirstName": "Sarah",
+            "LastName": "Anderson",
+            "Title": "Programmer",
+            "Dob": "11/05/1990",
+            "Address": "123 Somewhere street",
+            "City":"Tampa",
+            "State": "FL",
+            "Zip":"33615",
+            "Occupation": "Software Consultant",
+            "HomePhone": "4072672154",
+            "CellPhone": "4072672154",
+            "Email": "kevinanderson381@gmail.com",
+            "Gender":"Female"
+        },
+        {
+            "FirstName": "John",
             "LastName": "Anderson",
             "Title": "Programmer",
             "Dob": "11/05/1990",
@@ -76,7 +91,22 @@ export const list = `
             "Gender":"Male"
         },
         {
-            "FirstName": "kevin3",
+            "FirstName": "Mary",
+            "LastName": "Anderson",
+            "Title": "Programmer",
+            "Dob": "11/05/1990",
+            "Address": "123 Somewhere street",
+            "City":"Tampa",
+            "State": "FL",
+            "Zip":"33615",
+            "Occupation": "Software Consultant",
+            "HomePhone": "4072672154",
+            "CellPhone": "4072672154",
+            "Email": "kevinanderson381@gmail.com",
+            "Gender":"Female"
+        },
+        {
+            "FirstName": "Jimmy",
             "LastName": "Anderson",
             "Title": "Programmer",
             "Dob": "11/05/1990",
@@ -91,7 +121,7 @@ export const list = `
             "Gender":"Male"
         },
         {
-            "FirstName": "kevin3",
+            "FirstName": "Jane",
             "LastName": "Anderson",
             "Title": "Programmer",
             "Dob": "11/05/1990",
@@ -103,40 +133,10 @@ export const list = `
             "HomePhone": "4072672154",
             "CellPhone": "4072672154",
             "Email": "kevinanderson381@gmail.com",
-            "Gender":"Male"
+            "Gender":"Female"
         },
         {
-            "FirstName": "kevin3",
-            "LastName": "Anderson",
-            "Title": "Programmer",
-            "Dob": "11/05/1990",
-            "Address": "123 Somewhere street",
-            "City":"Tampa",
-            "State": "FL",
-            "Zip":"33615",
-            "Occupation": "Software Consultant",
-            "HomePhone": "4072672154",
-            "CellPhone": "4072672154",
-            "Email": "kevinanderson381@gmail.com",
-            "Gender":"Male"
-        },
-        {
-            "FirstName": "kevin3",
-            "LastName": "Anderson",
-            "Title": "Programmer",
-            "Dob": "11/05/1990",
-            "Address": "123 Somewhere street",
-            "City":"Tampa",
-            "State": "FL",
-            "Zip":"33615",
-            "Occupation": "Software Consultant",
-            "HomePhone": "4072672154",
-            "CellPhone": "4072672154",
-            "Email": "kevinanderson381@gmail.com",
-            "Gender":"Male"
-        },
-        {
-            "FirstName": "kevin3",
+            "FirstName": "Alex",
             "LastName": "Anderson",
             "Title": "Programmer",
             "Dob": "11/05/1990",

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ContactCard } from '../interfaces/contact-card';
 import { CardsService } from '../services/cards.service';
+import { FormControl } from '@angular/forms'
 
 @Component({
   selector: 'app-card',
@@ -27,7 +28,6 @@ export class CardComponent implements OnInit {
     this.ModalTitle = 'Edit Patient';
     this.index = index;
     this.tempPatient = JSON.parse(JSON.stringify(this.Patients[this.index]));
-    console.log(this.tempPatient);
 
   }
 
@@ -35,14 +35,13 @@ export class CardComponent implements OnInit {
     this.ModalTitle = 'Add new Patient';
     this.newPatient = true;
     this.tempPatient = {} as ContactCard;
-    console.log(this.tempPatient);
   }
 
   public cancel() {
     this.tempPatient = null;
     this.newPatient = false;
   }
-  public delete(){
+  public delete() {
     this.Patients.splice(this.index, 1);
   }
 
@@ -51,7 +50,7 @@ export class CardComponent implements OnInit {
       this.Patients.push(this.tempPatient);
 
     } else {
-    this.copy(this.Patients[this.index], this.tempPatient);
+      this.copy(this.Patients[this.index], this.tempPatient);
     }
 
     this.tempPatient = null;

@@ -1,0 +1,19 @@
+.card{
+    width: 265px;
+}
+
+.container{
+    margin: 5px;
+}
+
+.editBtn{
+    float: right;
+}
+
+.formLabel{
+    width: 120px
+}
+
+.card-block{
+    margin: 2px;
+}

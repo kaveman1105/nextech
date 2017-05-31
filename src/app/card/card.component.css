@@ -25,3 +25,15 @@
 .modalBtnGroup{
     margin: 10px;
 }
+
+.radioBtn{
+    margin-right: 10px;
+}
+.radioBtnGroup{
+    width: 207px;
+    margin: 7px 0px 7px 14px;
+}
+
+.modal-content{
+    min-width: 340px;
+}

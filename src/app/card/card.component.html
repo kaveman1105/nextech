@@ -67,7 +67,7 @@
       </div>
       <div class="modal-body">
         <div class="container">
-          <form class="form-inline" #f="ngForm" >
+          <form class="form-inline" #f="ngForm">
             <div class="form-group">
               <label class="formLabel" for="name">First Name</label>
               <input type="text" class="form-control" id="firstName" required [(ngModel)]="tempPatient.FirstName" name="Firstname">
@@ -86,8 +86,17 @@
             </div>
             <div class="form-group">
               <label class="formLabel" for="name">Gender</label>
-              <input type="text" class="form-control" id="Gender" required [(ngModel)]="tempPatient.Gender" name="Gender">
+
+              <div class="radioBtnGroup">
+                <div class="row">
+                <label class="radioBtn"><input type="radio" class="form-control" id="Gender" required [(ngModel)]="tempPatient.Gender" name="Gender" value="Male">Male</label>
+                <label class="radioBtn"><input type="radio" class="form-control" id="Gender" required [(ngModel)]="tempPatient.Gender" name="Gender" value="Female">Female</label>
+                </div>
+              </div>
+
             </div>
+
+
             <div class="form-group">
               <label class="formLabel" for="name">Address</label>
               <input type="text" class="form-control" id="Address" required [(ngModel)]="tempPatient.Address" name="Address">
